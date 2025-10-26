@@ -413,6 +413,14 @@
       position: relative;
       overflow: hidden;
     }
+
+    .project-image.gradient-bg {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    }
+
+    .project-image.chart-bg {
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    }
     
     .project-image::before {
       content: '';
@@ -459,6 +467,16 @@
       border-radius: 20px;
       font-size: 0.85rem;
       font-weight: 500;
+    }
+
+    .tag.design {
+      background: #f3e5f5;
+      color: #7b1fa2;
+    }
+
+    .tag.data {
+      background: #e3f2fd;
+      color: #1976d2;
     }
     
     .project-links {
@@ -890,6 +908,7 @@
       <p class="section-subtitle">제가 만든 프로젝트를 소개합니다</p>
       
       <div class="projects-grid">
+        <!-- 이미지 압축 서비스 -->
         <div class="project-card fade-in">
           <div class="project-image">🖼️</div>
           <div class="project-content">
@@ -909,6 +928,58 @@
                 <i class="fas fa-external-link-alt"></i> 실제 서비스
               </a>
               <a href="https://github.com/mir-colin/image-service-compression" target="_blank" class="project-link link-github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 컬러 그라데이션 추천 서비스 -->
+        <div class="project-card fade-in">
+          <div class="project-image gradient-bg">🎨</div>
+          <div class="project-content">
+            <h3 class="project-title">컬러 그라데이션 추천 서비스</h3>
+            <p class="project-description">
+              AI 기반의 아름다운 그라데이션 컬러 팔레트를 추천하고 생성하는 웹 서비스. 
+              디자이너와 개발자를 위한 직관적인 UI로 컬러 코드 복사, 다운로드 등 다양한 기능을 제공합니다.
+            </p>
+            <div class="project-tags">
+              <span class="tag design">CSS Gradient</span>
+              <span class="tag design">Color Theory</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag design">UI/UX Design</span>
+            </div>
+            <div class="project-links">
+              <a href="https://mir-colin.github.io/color-palette/" target="_blank" class="project-link link-demo">
+                <i class="fas fa-external-link-alt"></i> 실제 서비스
+              </a>
+              <a href="https://github.com/mir-colin/color-palette" target="_blank" class="project-link link-github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 차트 생성 서비스 -->
+        <div class="project-card fade-in">
+          <div class="project-image chart-bg">📊</div>
+          <div class="project-content">
+            <h3 class="project-title">차트 생성 서비스</h3>
+            <p class="project-description">
+              데이터를 입력하면 다양한 형태의 아름다운 차트를 생성하는 웹 애플리케이션. 
+              막대, 선, 원형, 도넛 차트 등 여러 타입을 지원하며, 실시간 미리보기와 이미지 다운로드 기능을 제공합니다.
+            </p>
+            <div class="project-tags">
+              <span class="tag data">Chart.js</span>
+              <span class="tag data">Data Visualization</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag data">Canvas API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://mir-colin.github.io/chart-generator/" target="_blank" class="project-link link-demo">
+                <i class="fas fa-external-link-alt"></i> 실제 서비스
+              </a>
+              <a href="https://github.com/mir-colin/chart-generator" target="_blank" class="project-link link-github">
                 <i class="fab fa-github"></i> GitHub
               </a>
             </div>
