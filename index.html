@@ -425,6 +425,14 @@
     .project-image.qr-bg {
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     }
+
+    .project-image.json-bg {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    }
+
+    .project-image.base64-bg {
+      background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    }
     
     .project-image::before {
       content: '';
@@ -481,6 +489,11 @@
     .tag.data {
       background: #e3f2fd;
       color: #1976d2;
+    }
+
+    .tag.tool {
+      background: #fff3e0;
+      color: #e65100;
     }
     
     .project-links {
@@ -960,6 +973,62 @@
                 <i class="fas fa-external-link-alt"></i> 실제 서비스
               </a>
               <a href="https://github.com/mir-colin/qr-code-cr" target="_blank" class="project-link link-github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- JSON 포맷터 & 검증기 -->
+        <div class="project-card fade-in">
+          <div class="project-image json-bg">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">JSON 포맷터 & 검증기</h3>
+            <p class="project-description">
+              JSON 데이터를 실시간으로 검증하고 포맷팅하는 개발자 도구. 
+              문법 오류 감지, 자동 들여쓰기, 축소/확장 기능을 제공하여 JSON 작업을 효율적으로 처리할 수 있습니다.
+            </p>
+            <div class="project-tags">
+              <span class="tag tool">JSON Parser</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag tool">Developer Tool</span>
+              <span class="tag">Syntax Highlighting</span>
+            </div>
+            <div class="project-links">
+              <a href="https://mir-colin.github.io/-JSON-Formatter-Validator/" target="_blank" class="project-link link-demo">
+                <i class="fas fa-external-link-alt"></i> 실제 서비스
+              </a>
+              <a href="https://github.com/mir-colin/-JSON-Formatter-Validator" target="_blank" class="project-link link-github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Base64 인코더/디코더 -->
+        <div class="project-card fade-in">
+          <div class="project-image base64-bg">
+            <i class="fas fa-exchange-alt"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Base64 인코더/디코더</h3>
+            <p class="project-description">
+              텍스트와 파일을 Base64로 인코딩하거나 디코딩하는 웹 도구. 
+              이미지, 문서 등 다양한 파일 형식을 지원하며, 실시간 변환과 복사 기능으로 개발 작업을 간편하게 만듭니다.
+            </p>
+            <div class="project-tags">
+              <span class="tag tool">Base64</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag tool">Encoding</span>
+              <span class="tag">File Processing</span>
+            </div>
+            <div class="project-links">
+              <a href="https://mir-colin.github.io/base64-indicode/" target="_blank" class="project-link link-demo">
+                <i class="fas fa-external-link-alt"></i> 실제 서비스
+              </a>
+              <a href="https://github.com/mir-colin/base64-indicode" target="_blank" class="project-link link-github">
                 <i class="fab fa-github"></i> GitHub
               </a>
             </div>
